@@ -1,0 +1,42 @@
+.question-app .q-photo{margin:16px 0 20px;border-top:1px solid #DCE5F2;padding-top:16px}
+.question-app .q-photo-file-label{display:block;font-size:14px;font-weight:650;margin-bottom:8px}
+.question-app .q-photo input[type=file]{font-size:12px;padding:8px;min-height:44px;width:100%;min-width:0;margin-bottom:8px;background:white}
+.question-app .q-photo input[type=file]::file-selector-button{font:inherit;font-weight:650;min-height:44px;padding:8px;border:1px solid #788AA3;background:#F2F6FD;border-radius:6px;margin-right:8px;cursor:pointer;color:var(--q-ink)}
+.question-app .q-photo-preview{margin:16px 0 12px;padding:10px;background:#F0F5FC;border:1px solid #CBD8E8;border-radius:8px}
+.question-app .q-photo-preview img{display:block;max-width:100%;max-height:340px;object-fit:contain;margin:0 auto;background:white}
+.question-app .q-photo-preview figcaption{font-size:12px;color:var(--q-muted);line-height:1.5;margin-top:8px;overflow-wrap:anywhere}
+.question-app .q-photo-actions{display:flex;gap:8px;flex-wrap:wrap}
+.question-app .q-photo-secondary{background:white;border:1px solid #788AA3;border-radius:7px;color:var(--q-ink);padding:9px 10px;font-size:13px;min-height:44px}
+.question-app .q-photo-disclosure{font-size:13px;line-height:1.55;color:var(--q-muted);margin:14px 0}
+.question-app .q-photo .q-primary{width:100%}
+.question-app .q-photo-cancel{width:100%;margin-top:8px}
+.question-app .q-photo-status{margin-top:12px}.question-app .q-photo-status+.q-helper{margin-top:6px;overflow-wrap:anywhere}
+.question-app .q-photo-error,.question-app .q-photo-unavailable{padding:12px;margin-top:12px;background:#FFF4EE;border-left:3px solid var(--q-rust);font-size:13px;color:#713015;line-height:1.55;border-radius:0 6px 6px 0}
+.question-app .q-photo-issues{margin:16px 0;padding:14px;background:#FFF6EE;border:1px solid #D8BBA7;border-radius:8px}
+.question-app .q-photo-issues h3{font-size:15px;color:#713015}.question-app .q-photo-issues ul{padding-left:20px;font-size:13px;line-height:1.6;margin:10px 0;color:#713015;overflow-wrap:anywhere}
+.question-app .q-photo-issues label{display:flex;gap:10px;align-items:center;min-height:44px;cursor:pointer;font-size:13px;font-weight:600;line-height:1.5}
+.question-app .q-photo-issues input[type=checkbox]{width:20px;height:20px;min-height:20px;flex-shrink:0;accent-color:var(--q-blue)}
+.question-app .q-photo-issues .q-helper{margin-top:8px}
+.question-app .q-photo-inspect{width:100%;margin-top:10px}
+.question-app .q-photo-dialog{width:95vw;max-width:1700px;max-height:90dvh;padding:24px;border:1px solid #788AA3;border-radius:14px;background:#F7FAFF;color:var(--q-ink);overflow:auto}
+.question-app .q-photo-dialog::backdrop{background:rgba(20,36,59,.64)}
+.question-app .q-photo-dialog-header{display:flex;justify-content:space-between;align-items:start;gap:20px;margin-bottom:12px}.question-app .q-photo-dialog-header h2{margin:0;font-size:23px}.question-app .q-photo-dialog-header button{flex-shrink:0}
+.question-app .q-photo-inspection-region{margin-top:18px;max-width:100%;max-height:65dvh;overflow:auto;background:white;border:1px solid #B5C9DD;border-radius:6px}
+.question-app .q-photo-inspection-region:focus-visible{outline:3px solid var(--q-blue);outline-offset:3px}
+.question-app .q-photo-inspection-region img{display:block;max-width:none;object-fit:contain}
+@media(max-width:559px){.question-app .q-photo-dialog{width:calc(100vw - 24px);padding:16px;max-height:90dvh}.question-app .q-photo-dialog-header{gap:12px;align-items:center}.question-app .q-photo-dialog-header h2{font-size:19px}.question-app .q-photo-dialog-header button{padding:8px}.question-app .q-photo-inspection-region{max-height:60dvh}}
+/* R5 review copy and image controls remain readable in the wider composer. */
+.question-app .q-photo-preview figcaption,.question-app .q-photo input[type=file]{font-size:13px}
+.question-app .q-photo-disclosure{font-size:14px;line-height:1.6}
+.question-app .q-photo-error{font-size:14px}
+.question-app .q-photo-actions>*{flex:1;min-width:110px}
+.question-app .q-photo-issues ul{font-size:14px;line-height:1.6}
+.question-app .q-photo-issues label{font-size:14px}
+.question-app .q-photo-dialog-header button{min-width:100px}
+.question-app .q-photo-file-label{line-height:1.5}
+.question-app .q-ocr-correction,.question-app .q-paste-restart{padding:12px;margin:12px 0;border:1px solid #CBD9E8;border-radius:8px;background:#F2F6FD;color:#51637B;font-size:14px;line-height:1.6}
+.question-app .q-ocr-correction p,.question-app .q-paste-restart p{font-size:14px;line-height:1.6}
+.question-app .q-ocr-correction summary{min-height:44px;padding:10px 0;font-size:14px;font-weight:650;cursor:pointer;color:#14243B}
+.question-app .q-ocr-correction summary:focus-visible{outline:3px solid #2457D6;outline-offset:3px;border-radius:3px}
+.question-app .q-ocr-correction ul{padding-left:20px;margin:4px 0 12px}.question-app .q-ocr-correction li{padding:4px 0;overflow-wrap:anywhere}.question-app .q-ocr-correction li span{font-family:Cambria,'Times New Roman',serif;font-size:16px;color:#14243B}
+.question-app .q-paste-restart button{min-height:44px;width:100%;margin:10px 0;padding:10px 12px;border:1px solid #788AA3;border-radius:7px;background:white;color:#14243B;font-size:14px;font-weight:650;cursor:pointer}

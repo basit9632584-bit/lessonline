@@ -1,0 +1,29 @@
+{
+  "name": "lessonline",
+  "private": true,
+  "license": "UNLICENSED",
+  "author": "Abdul Basit",
+  "version": "0.9.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run prepare:ocr && npm run build:offline && npm run build:portable && vite --host 127.0.0.1",
+    "test": "node --test tests/*.test.ts tests/*.test.mjs",
+    "build:offline": "node scripts/build-offline.mjs",
+    "build:portable": "node scripts/build-offline-question.mjs",
+    "prepare:ocr": "node scripts/prepare-ocr.mjs",
+    "build": "tsc --noEmit && npm run prepare:ocr && npm run build:offline && npm run build:portable && vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "jsxgraph": "1.14.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "tesseract.js": "7.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.4"
+  }
+}

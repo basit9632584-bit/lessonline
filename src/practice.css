@@ -1,0 +1,26 @@
+.practice-section { margin: 32px 0; padding: 28px; border: 1px solid var(--border); border-radius: 12px; background: #fff; color: var(--ink); }
+.practice-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.practice-heading h2 { margin: 4px 0 12px; font-size: clamp(1.4rem, 2vw, 1.8rem); }
+.practice-context, .practice-rounding { margin: 6px 0; max-width: 76ch; line-height: 1.6; }
+.practice-rounding { color: var(--muted); font-size: .85rem; }
+.practice-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 22px; }
+.practice-card { min-width: 0; padding: 20px 16px 14px; border: 1px solid var(--border); background: #EDF3FF; border-radius: 12px; }
+.practice-card-heading { display: flex; gap: 10px; align-items: baseline; margin-bottom: 18px; }
+.practice-number { color: var(--muted); font-family: monospace; font-size: .8rem; }
+.practice-card h3 { font-size: 1rem; margin: 0; }
+.practice-card label { display: block; font-weight: 600; line-height: 1.5; min-height: 3em; }
+.practice-answer-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.practice-answer-row input { flex: 1 1 90px; min-width: 0; width: 100%; min-height: 44px; border: 1px solid var(--control-border); border-radius: 12px; background: #fff; padding: 8px 10px; font: inherit; color: var(--ink); }
+.practice-answer-row input[aria-invalid="true"] { border-color: #a63d24; }
+.practice-answer-row button { flex-shrink: 0; min-height: 44px; border: 1px solid var(--blue); border-radius: 12px; background: var(--blue); color: #fff; padding: 8px 12px; font: inherit; font-weight: 600; cursor: pointer; }
+.practice-answer-row button:hover { filter: brightness(.9); }
+.practice-answer-row :focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.practice-feedback { min-height: 3em; margin: 0; font-size: .85rem; line-height: 1.6; overflow-wrap: anywhere; color: var(--muted); }
+.practice-feedback.correct { color: #1c5b43; }
+.practice-feedback.incorrect, .practice-feedback.invalid { color: #8b351f; }
+.compact-lesson .practice-grid { grid-template-columns: 1fr; }
+.compact-lesson .practice-card label { min-height: auto; }
+@media (max-width: 760px) { .practice-grid { grid-template-columns: 1fr; } .practice-card label { min-height: auto; } }
+@media (max-width: 420px) { .practice-section { padding: 18px 14px; } .practice-card { padding: 16px 12px; } }
+
+.practice-card label,.practice-context,.practice-rounding{overflow-wrap:anywhere}.practice-answer-row input{font-size:16px}

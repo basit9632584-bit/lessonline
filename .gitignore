@@ -1,0 +1,10 @@
+node_modules/
+dist/
+outputs/
+work/
+.vercel/
+public/ocr/
+public/offline/
+public/portable/
+.env*
+!.env.example
